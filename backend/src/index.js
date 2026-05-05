@@ -6,11 +6,30 @@ const spotService = require('./services/spotService');
 const recommendationService = require('./services/recommendationService');
 const incidentService = require('./services/incidentService');
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerJsDoc = require('swagger-jsdoc');
+
+const swaggerOptions = {
+  swaggerDefinition: {
+    openapi: '3.0.0',
+    info: {
+      title: 'API do Estacionamento Inteligente',
+      version: '1.0.0',
+      description: 'Documentação da API REST do projeto de Estacionamento Inteligente.',
+    },
+    servers: [{ url: 'http://localhost:3000' }],
+  },
+  apis: ['./src/routes/*.js'], 
+};
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use('/api/v1', apiRoutes);
 
