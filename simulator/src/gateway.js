@@ -10,8 +10,12 @@ class Gateway {
   }
 
   start() {
-    const brokerUrl = process.env.MQTT_BROKER_URL || 'mqtt://localhost:1883';
-    this.mqttClient = mqtt.connect(brokerUrl);
+    const brokerUrl = process.env.MQTT_BROKER_URL || 'mqtt://broker.hivemq.com:1883';
+    const options = {
+      username: process.env.MQTT_USERNAME,
+      password: process.env.MQTT_PASSWORD
+    };
+    this.mqttClient = mqtt.connect(brokerUrl, options);
 
     this.mqttClient.on('connect', () => {
       console.log(`[Gateway ${this.sectorId}] Connected to MQTT`);
