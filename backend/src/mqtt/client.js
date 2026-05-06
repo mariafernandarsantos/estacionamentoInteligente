@@ -29,12 +29,8 @@ const initMqttClient = () => {
       const payload = JSON.parse(message.toString());
       
       if (topic.endsWith('/events')) {
-        // payload = { eventId, ts, sectorId, spotId, state, source }
         spotService.processEvent(payload);
-      } else if (topic.endsWith('/status')) {
-        // TODO: Handle gateway status if needed (optional for MVP)
-        // console.log(`Gateway status from ${topic}:`, payload);
-      }
+      } 
     } catch (error) {
       console.error('Error processing MQTT message:', error.message);
     }

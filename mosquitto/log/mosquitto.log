@@ -177,3 +177,35 @@
 1778010786: Client mqttjs_925fb7f1 closed its connection.
 1778010786: Client mqttjs_37349298 closed its connection.
 1778012012: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1778012215: mosquitto version 2.0.18 terminating
+1778012215: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1778088618: mosquitto version 2.0.18 starting
+1778088618: Config loaded from /mosquitto/config/mosquitto.conf.
+1778088618: Opening ipv4 listen socket on port 1883.
+1778088618: Opening ipv6 listen socket on port 1883.
+1778088618: mosquitto version 2.0.18 running
+1778089959: New connection from 172.19.0.1:53618 on port 1883.
+1778089959: New client connected from 172.19.0.1:53618 as mqttjs_31c01f7a (p2, c1, k60).
+1778090004: New connection from 172.19.0.1:39304 on port 1883.
+1778090004: New connection from 172.19.0.1:39316 on port 1883.
+1778090004: New client connected from 172.19.0.1:39304 as mqttjs_8529acc1 (p2, c1, k60).
+1778090004: New client connected from 172.19.0.1:39316 as mqttjs_80c4095e (p2, c1, k60).
+1778090004: New connection from 172.19.0.1:39318 on port 1883.
+1778090004: New client connected from 172.19.0.1:39318 as mqttjs_d274aa37 (p2, c1, k60).
+1778090534: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1778091498: Client mqttjs_31c01f7a closed its connection.
+1778091500: Client mqttjs_8529acc1 closed its connection.
+1778091500: Client mqttjs_d274aa37 closed its connection.
+1778091500: Client mqttjs_80c4095e closed its connection.
+1778091530: New connection from 172.19.0.1:43684 on port 1883.
+1778091530: New client connected from 172.19.0.1:43684 as mqttjs_9d21ec73 (p2, c1, k60).
+1778091536: New connection from 172.19.0.1:38828 on port 1883.
+1778091536: New client connected from 172.19.0.1:38828 as mqttjs_cf52c9c4 (p2, c1, k60).
+1778091536: New connection from 172.19.0.1:38840 on port 1883.
+1778091536: New client connected from 172.19.0.1:38840 as mqttjs_b7f17701 (p2, c1, k60).
+1778091536: New connection from 172.19.0.1:38848 on port 1883.
+1778091536: New client connected from 172.19.0.1:38848 as mqttjs_fa6f369b (p2, c1, k60).
+1778092108: Client mqttjs_9d21ec73 closed its connection.
+1778092111: Client mqttjs_cf52c9c4 closed its connection.
+1778092111: Client mqttjs_b7f17701 closed its connection.
+1778092111: Client mqttjs_fa6f369b closed its connection.
